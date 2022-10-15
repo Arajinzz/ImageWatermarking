@@ -1,0 +1,25 @@
+nom_image		image tatouee psnr		marque extraite psnr		image original extraite psnr
+
+arbre			41.81				36.12				67
+
+building2		49.63				36.12				78.59
+
+cat			50.47				inf(Identique)			107.1
+
+desktop			46.92				22.7				62.64				
+
+hall1			47.78				inf(Identique)			86.52
+
+lena			40.15				inf(Identique)			Inf(Identique)
+
+marchet			50.48				27.09				70.35		
+
+nature			44.99				36.12				73.12
+
+peppers			39.45				inf(Identique)			97.54
+
+sword			50.47				inf(Identique)			inf(Identique)
+
+usthb			49.62				inf(Identique)			80.34
+
+water			42.84				inf(Identique)			83.55		

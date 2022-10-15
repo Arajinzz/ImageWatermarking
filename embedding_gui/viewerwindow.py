@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui/imageviewer.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_ViewerWindow(object):
+    def setupUi(self, ViewerWindow):
+        ViewerWindow.setObjectName("ViewerWindow")
+        ViewerWindow.resize(879, 616)
+        self.centralwidget = QtWidgets.QWidget(ViewerWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.psnr = QtWidgets.QLabel(self.centralwidget)
+        self.psnr.setObjectName("psnr")
+        self.verticalLayout.addWidget(self.psnr)
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 857, 521))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.displayimage = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.displayimage.setText("")
+        self.displayimage.setObjectName("displayimage")
+        self.verticalLayout_3.addWidget(self.displayimage)
+        self.verticalLayout_4.addLayout(self.verticalLayout_3)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        self.verticalLayout_2.addLayout(self.verticalLayout)
+        ViewerWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(ViewerWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 879, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menuZoom = QtWidgets.QMenu(self.menubar)
+        self.menuZoom.setObjectName("menuZoom")
+        ViewerWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(ViewerWindow)
+        self.statusbar.setObjectName("statusbar")
+        ViewerWindow.setStatusBar(self.statusbar)
+        self.actionResize = QtWidgets.QAction(ViewerWindow)
+        self.actionResize.setObjectName("actionResize")
+        self.actionNoise = QtWidgets.QAction(ViewerWindow)
+        self.actionNoise.setObjectName("actionNoise")
+        self.actionBlur = QtWidgets.QAction(ViewerWindow)
+        self.actionBlur.setObjectName("actionBlur")
+        self.actionClose = QtWidgets.QAction(ViewerWindow)
+        self.actionClose.setObjectName("actionClose")
+        self.actionZoom_In_25 = QtWidgets.QAction(ViewerWindow)
+        self.actionZoom_In_25.setObjectName("actionZoom_In_25")
+        self.actionZoom_out_25 = QtWidgets.QAction(ViewerWindow)
+        self.actionZoom_out_25.setObjectName("actionZoom_out_25")
+        self.actionResetZoom = QtWidgets.QAction(ViewerWindow)
+        self.actionResetZoom.setObjectName("actionResetZoom")
+        self.actionOperations = QtWidgets.QAction(ViewerWindow)
+        self.actionOperations.setObjectName("actionOperations")
+        self.actionReset = QtWidgets.QAction(ViewerWindow)
+        self.actionReset.setObjectName("actionReset")
+        self.menuFile.addAction(self.actionClose)
+        self.menuZoom.addAction(self.actionZoom_In_25)
+        self.menuZoom.addAction(self.actionZoom_out_25)
+        self.menuZoom.addAction(self.actionResetZoom)
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuZoom.menuAction())
+
+        self.retranslateUi(ViewerWindow)
+        QtCore.QMetaObject.connectSlotsByName(ViewerWindow)
+
+    def retranslateUi(self, ViewerWindow):
+        _translate = QtCore.QCoreApplication.translate
+        ViewerWindow.setWindowTitle(_translate("ViewerWindow", "Image Viewer"))
+        self.psnr.setText(_translate("ViewerWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
+        self.menuFile.setTitle(_translate("ViewerWindow", "File"))
+        self.menuZoom.setTitle(_translate("ViewerWindow", "Zoom"))
+        self.actionResize.setText(_translate("ViewerWindow", "Resize"))
+        self.actionNoise.setText(_translate("ViewerWindow", "Noise"))
+        self.actionBlur.setText(_translate("ViewerWindow", "Blur"))
+        self.actionClose.setText(_translate("ViewerWindow", "Close"))
+        self.actionZoom_In_25.setText(_translate("ViewerWindow", "Zoom in 25%"))
+        self.actionZoom_out_25.setText(_translate("ViewerWindow", "Zoom out 25%"))
+        self.actionResetZoom.setText(_translate("ViewerWindow", "Reset"))
+        self.actionOperations.setText(_translate("ViewerWindow", "Operations"))
+        self.actionReset.setText(_translate("ViewerWindow", "Reset"))
